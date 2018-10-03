@@ -19,10 +19,10 @@
   </a>
 </p>
 
-| Table of Contents                         |
-|:------------------------------------------|
-| [React](src/react)                        |
-| [StyledComponents](src/styled-components) |
+| Table of Contents                        |
+|:-----------------------------------------|
+| [React](ts/react)                        |
+| [StyledComponents](ts/styled-components) |
 
 #
 
