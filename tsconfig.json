@@ -4,14 +4,15 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "esModuleInterop": true,
-    "jsx": "react",
-    "lib": ["dom", "esnext"],
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
     "module": "esnext",
     "outDir": "dist",
     "pretty": true,
+    "skipLibCheck": true,
     "strict": true,
-    "target": "es5",
+    "target": "esnext",
     "types": ["react"]
   },
-  "include": ["examples"]
+  "include": ["src"]
 }

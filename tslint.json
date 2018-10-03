@@ -3,5 +3,9 @@
   "extends": ["tslint:recommended", "tslint-react"],
   "rules": {
     "interface-name": [true, "never-prefix"],
+    "jsx-boolean-value": [true, "never"],
+    "max-line-length": [true, 80],
+    "member-access": [true, "no-public"],
+    "semicolon": [true, "never"]
   }
 }
