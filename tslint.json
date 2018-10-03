@@ -2,6 +2,7 @@
   "$schema": "http://json.schemastore.org/tslint",
   "extends": ["tslint:recommended", "tslint-react"],
   "rules": {
+    "arrow-parens": false,
     "interface-name": [true, "never-prefix"],
     "jsx-boolean-value": [true, "never"],
     "max-line-length": [true, 80],

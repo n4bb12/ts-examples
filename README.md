@@ -22,6 +22,7 @@
 | Table of Contents                        |
 |:-----------------------------------------|
 | [React](ts/react)                        |
+| [Redux](ts/redux)                        |
 | [StyledComponents](ts/styled-components) |
 
 #
