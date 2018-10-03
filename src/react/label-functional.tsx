@@ -1,11 +1,11 @@
 import React, { SFC } from "react"
 
-export interface LabelProps {
+export interface Props {
   htmlFor?: string
   required?: boolean
 }
 
-export const Label: SFC<LabelProps> = ({ children, ...props }) => (
+export const Label: SFC<Props> = ({ children, ...props }) => (
   <label {...props}>{children}</label>
 )
 

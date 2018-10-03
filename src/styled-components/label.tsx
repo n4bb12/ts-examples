@@ -1,19 +1,19 @@
 import React from "react"
 import styled, { css } from "styled-components"
 
-export interface LabelProps {
+export interface Props {
   htmlFor?: string
   required?: boolean
 }
 
-const requiredStyles = ({ required }: LabelProps) =>
+const requiredStyles = ({ required }: Props) =>
   css`
     &::after {
       content: ${required ? " *:" : ":"};
     }
   `
 
-export const Label = styled.label<LabelProps>`
+export const Label = styled.label<Props>`
   color: #444;
   font-weight: bold;
   margin-bottom: 0.5em;
