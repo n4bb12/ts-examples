@@ -7,13 +7,13 @@
 </p>
 
 <p align="center">
-  <a href="https://circleci.com/gh/n4bb12/workflows/examples-react-ts">
-    <img alt="CircleCI" src="https://flat.badgen.net/circleci/github/n4bb12/examples-react-ts?icon=circleci">
+  <a href="https://travis-ci.com/n4bb12/examples-react-ts">
+    <img alt="Travis" src="https://flat.badgen.net/travis/n4bb12/examples-react-ts?icon=travis">
   </a>
   <a href="https://raw.githubusercontent.com/n4bb12/examples-react-ts/master/LICENSE">
     <img alt="License" src="https://flat.badgen.net/github/license/n4bb12/examples-react-ts?icon=github">
   </a>
-  <a href="https://github.com/n4bb12/examples-react-ts/issues/new/choose">
+  <a href="https://github.com/n4bb12/examples-react-ts/issues/new">
     <img alt="Issues" src="https://flat.badgen.net/badge/github/create issue/pink?icon=github">
   </a>
 </p>
@@ -25,7 +25,7 @@
 ## Docs
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-- [React#TypeScript](https://reactjs.org/docs/static-type-checking.html#typescript)
+- [React->TypeScript](https://reactjs.org/docs/static-type-checking.html#typescript)
 
 ## Related
 - [TypeScript-React-Starter](https://github.com/Microsoft/TypeScript-React-Starter)
