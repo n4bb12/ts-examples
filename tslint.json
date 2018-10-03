@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json.schemastore.org/tslint",
+  "extends": ["tslint:recommended", "tslint-react"],
+  "rules": {
+    "interface-name": [true, "never-prefix"],
+  }
+}

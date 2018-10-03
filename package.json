@@ -1,0 +1,30 @@
+{
+  "name": "examples-react-ts",
+  "version": "1.0.0",
+  "private": true,
+  "keywords": [
+    "react",
+    "typescript",
+    "styled-components",
+    "ts",
+    "optional-chaining"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "lint": "tslint --project tsconfig.json --config tslint.json"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "styled-components": "^3.4.9"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.14",
+    "@types/styled-components": "^3.0.1",
+    "ts-optchain": "^0.1.1",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.1"
+  },
+  "$schema": "http://json.schemastore.org/package"
+}
