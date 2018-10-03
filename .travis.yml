@@ -8,7 +8,6 @@ cache:
   directories:
     - "node_modules"
 
-jobs:
-  include:
-    - stage: yarn lint
-    - stage: yarn build
+script:
+  - yarn lint
+  - yarn build
