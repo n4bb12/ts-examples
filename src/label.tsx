@@ -2,6 +2,7 @@ import React, { Component } from "react"
 
 export interface LabelProps {
   htmlFor?: string
+  required?: boolean
 }
 
 export class Label extends Component<LabelProps> {
@@ -11,4 +12,8 @@ export class Label extends Component<LabelProps> {
   }
 }
 
-export const example = <Label htmlFor="example">Hello World!</Label>
+export const example = (
+  <Label required htmlFor="example">
+    Example
+  </Label>
+)

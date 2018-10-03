@@ -2,10 +2,11 @@ import React, { SFC } from "react"
 
 export interface LabelProps {
   htmlFor?: string
+  required?: boolean
 }
 
 export const Label: SFC<LabelProps> = ({ children, ...props }) => (
   <label {...props}>{children}</label>
 )
 
-export const example = <Label htmlFor="example">Hello World!</Label>
+export const example = <Label required htmlFor="example">Example</Label>
