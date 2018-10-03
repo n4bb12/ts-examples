@@ -1,9 +1,10 @@
 <h1 align="center">
-  🍭 React Typescript Examples
+  💡 React Typescript Examples
 </h1>
 
 <p align="center">
-  An example collection for using React and popular frameworks from the React ecosystem with TypeScript
+  A collection of examples using React and popular frameworks from the React ecosystem with TypeScript.<br>
+  All examples run on CI to ensure they compile.
 </p>
 
 <p align="center">
@@ -18,15 +19,18 @@
   </a>
 </p>
 
-## Examples
-- [React](src/react)
-- [StyledComponents](src/styled-components)
+| Table of Contents                         |
+|:------------------------------------------|
+| [React](src/react)                        |
+| [StyledComponents](src/styled-components) |
 
-## Docs
+#
+
+#### Docs
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - [React->TypeScript](https://reactjs.org/docs/static-type-checking.html#typescript)
 
-## Related
+#### Related
 - [TypeScript-React-Starter](https://github.com/Microsoft/TypeScript-React-Starter)
 - [react-typescript-cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet)
