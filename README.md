@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  An example collection for using React and popular frameworks from the React ecosystem with TypeScript
+  An collection of examples using React and popular frameworks from the React ecosystem with TypeScript
 </p>
 
 <p align="center">
