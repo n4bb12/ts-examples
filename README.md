@@ -21,9 +21,9 @@
 
 | Table of Contents                        |
 |:-----------------------------------------|
-| [React](ts/react)                        |
-| [Redux](ts/redux)                        |
-| [StyledComponents](ts/styled-components) |
+| [React](examples/react)                        |
+| [Redux](examples/redux)                        |
+| [StyledComponents](examples/styled-components) |
 
 #
 

@@ -6,12 +6,11 @@
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
     "module": "esnext",
-    "outDir": "js",
     "pretty": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
     "types": ["react"]
   },
-  "include": ["ts"]
+  "include": ["examples"]
 }

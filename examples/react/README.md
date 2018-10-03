@@ -1,6 +1,6 @@
 ## React
 
-#### Deafult Props Static
+### Deafult Props Static
 
 ```tsx
 import React, { Component } from "react"
@@ -26,11 +26,8 @@ export class EmailInput extends Component<Props> {
  */
 export const example = <EmailInput />
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>
 
-#### Default Props Destructured
+### Default Props Destructured
 
 ```tsx
 import React, { Component } from "react"
@@ -51,11 +48,8 @@ export class EmailInput extends Component<Props> {
  */
 export const example = <EmailInput />
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>
 
-#### Default Props Functional Destructured
+### Default Props Functional Destructured
 
 ```tsx
 import React, { SFC } from "react"
@@ -73,11 +67,8 @@ export const EmailInput: SFC<Props> = ({ placeholder = "E-Mail" }) => (
  */
 export const example = <EmailInput />
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>
 
-#### Default Props Functional Static
+### Default Props Functional Static
 
 ```tsx
 import React, { SFC } from "react"
@@ -103,11 +94,8 @@ EmailInput.defaultProps = defaultProps
  */
 export const example = <EmailInput />
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>
 
-#### Props Dom
+### Props Dom
 
 ```tsx
 import React, { Component, LabelHTMLAttributes } from "react"
@@ -129,11 +117,8 @@ export const example = (
   </Label>
 )
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>
 
-#### Props Functional
+### Props Functional
 
 ```tsx
 import React, { SFC } from "react"
@@ -149,11 +134,8 @@ export const Label: SFC<Props> = ({ children, ...props }) => (
 
 export const example = <Label required htmlFor="example">Example</Label>
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>
 
-#### Props Inline
+### Props Inline
 
 ```tsx
 import React, { Component } from "react"
@@ -174,11 +156,8 @@ export const example = (
   </Label>
 )
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>
 
-#### Props
+### Props
 
 ```tsx
 import React, { Component } from "react"
@@ -201,6 +180,3 @@ export const example = (
   </Label>
 )
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>

@@ -1,6 +1,6 @@
 ## Styled Components
 
-#### Props Dom
+### Props Dom
 
 ```tsx
 import React, { LabelHTMLAttributes } from "react"
@@ -26,11 +26,8 @@ export const Label = styled.label<Props>`
 
 export const example = <Label required htmlFor="example">Example</Label>
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>
 
-#### Props
+### Props
 
 ```tsx
 import React from "react"
@@ -61,6 +58,3 @@ export const example = (
   </Label>
 )
 ```
-<details>
-<summary>See JavaScript equivalent</summary>
-</details>

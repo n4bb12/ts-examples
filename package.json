@@ -6,15 +6,13 @@
     "optional-chaining",
     "react",
     "styled-components",
-    "ts",
     "typescript"
   ],
   "license": "ISC",
   "scripts": {
-    "clean": "rimraf js/**/*.jsx",
-    "compile": "tsc --project tsconfig.json",
+    "compile": "tsc --project tsconfig.json --noEmit",
     "docs": "ts-node --project tsconfig.dev.json generate-docs",
-    "build": "yarn clean && yarn compile",
+    "build": "yarn compile",
     "lint": "tslint --project tsconfig.json --config tslint.json"
   },
   "dependencies": {
@@ -27,7 +25,6 @@
     "@types/styled-components": "^3.0.1",
     "change-case": "^3.0.2",
     "nehemiah": "^0.2.0",
-    "rimraf": "^2.6.2",
     "ts-node": "^7.0.1",
     "ts-optchain": "^0.1.1",
     "tslint": "^5.11.0",

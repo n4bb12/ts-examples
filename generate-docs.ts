@@ -4,27 +4,23 @@ import path from "path"
 
 const n = new Nehemiah()
 
-async function generateExample(filename: string): Promise<string> {
-  const ts = await n.read(filename).asText()
-  const ext = path.extname(filename)
-  const name = path.basename(filename, ext)
+async function generateExample(tsFilename: string): Promise<string> {
+  const code = await n.read(tsFilename).asText()
+  const ext = path.extname(tsFilename)
+  const name = path.basename(tsFilename, ext)
 
   return [
-    `#### ${titleCase(name)}`,
+    `### ${titleCase(name)}`,
     "",
     "```" + ext.substr(1),
-    ts!.trim(),
+    code!.trim(),
     "```",
-    "<details>",
-    "<summary>See JavaScript equivalent</summary>",
-
-    "</details>",
   ].join("\n")
 }
 
 async function updateReadme(dir: string): Promise<void> {
   const filenames = await n.find(dir + "/*.tsx")
-  const examples = await Promise.all(filenames.map(generateExample))
+  const examples = await Promise.all(filenames.sort().map(generateExample))
   const readme = [
     `## ${titleCase(path.basename(dir))}`,
     ...examples,
@@ -34,6 +30,6 @@ async function updateReadme(dir: string): Promise<void> {
 }
 
 (async () => {
-  const dirs = await n.find("ts", { onlyDirectories: true })
+  const dirs = await n.find("examples", { onlyDirectories: true })
   await Promise.all(dirs.map(updateReadme))
 })()
