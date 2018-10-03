@@ -11,7 +11,8 @@
   ],
   "license": "ISC",
   "scripts": {
-    "build": "rimraf dist && tsc --project tsconfig.json",
+    "clean": "rimraf js/**/*.d.ts js/**/*.jsx",
+    "build": "yarn clean && tsc --project tsconfig.json",
     "lint": "tslint --project tsconfig.json --config tslint.json"
   },
   "dependencies": {
