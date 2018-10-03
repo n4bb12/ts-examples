@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "keywords": [
+    "optional-chaining",
     "react",
-    "typescript",
     "styled-components",
     "ts",
-    "optional-chaining"
+    "typescript"
   ],
   "license": "ISC",
   "scripts": {

@@ -1,7 +1,7 @@
 import { SFC } from "react";
-export interface LabelProps {
+export interface Props {
     htmlFor?: string;
     required?: boolean;
 }
-export declare const Label: SFC<LabelProps>;
+export declare const Label: SFC<Props>;
 export declare const example: JSX.Element;

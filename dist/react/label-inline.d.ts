@@ -1,9 +1,8 @@
 import { Component } from "react";
-export interface LabelProps {
+export declare class Label extends Component<{
     htmlFor?: string;
     required?: boolean;
-}
-export declare class Label extends Component<LabelProps> {
+}> {
     render(): JSX.Element;
 }
 export declare const example: JSX.Element;
