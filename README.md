@@ -1,5 +1,5 @@
 <h1 align="center">
-  🍭 React Typescript Examples
+  💡 React Typescript Examples
 </h1>
 
 <p align="center">
