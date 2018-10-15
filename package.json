@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "keywords": [
+    "example",
     "optional-chaining",
     "react",
     "styled-components",
+    "ts",
     "typescript"
   ],
+  "homepage": "https://github.com/n4bb12/examples-react-ts/blob/master/README.md",
+  "bugs": "https://github.com/n4bb12/examples-react-ts/issues",
+  "repository": "github:n4bb12/examples-react-ts",
   "license": "ISC",
+  "author": "Abraham Schilling",
   "scripts": {
+    "build": "yarn compile",
     "compile": "tsc --project tsconfig.json --noEmit",
     "docs": "ts-node --project tsconfig.dev.json generate-docs",
-    "build": "yarn compile",
     "lint": "tslint --project tsconfig.json --config tslint.json"
   },
   "dependencies": {

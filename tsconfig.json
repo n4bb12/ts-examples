@@ -4,13 +4,20 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "preserve",
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "module": "esnext",
     "pretty": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "types": ["react"]
+    "types": [
+      "react"
+    ]
   },
-  "include": ["examples"]
+  "include": [
+    "examples"
+  ]
 }

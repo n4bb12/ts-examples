@@ -1,12 +1,19 @@
 {
   "$schema": "http://json.schemastore.org/tslint",
-  "extends": ["tslint:recommended", "tslint-react"],
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "@n4bb12/config-tslint"
+  ],
   "rules": {
     "arrow-parens": false,
-    "interface-name": [true, "never-prefix"],
-    "jsx-boolean-value": [true, "never"],
-    "max-line-length": [true, 80],
-    "member-access": [true, "no-public"],
-    "semicolon": [true, "never"]
+    "jsx-boolean-value": [
+      true,
+      "never"
+    ],
+    "member-access": [
+      true,
+      "no-public"
+    ]
   }
 }
