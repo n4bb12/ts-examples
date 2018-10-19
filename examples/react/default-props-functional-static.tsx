@@ -4,19 +4,17 @@ const defaultProps = {
   placeholder: "E-Mail",
 }
 
-export type DefaultProps = Partial<typeof defaultProps>
+/**
+ * The default props need to be made optional
+ * if consumers should not need to specify them.
+ */
+export type Props = Partial<typeof defaultProps>
 
-export interface AdditionalProps {
-  title?: string
-}
-
-export type Props = DefaultProps & AdditionalProps
-
-export const EmailInput: SFC<Props> = (props) => <input {...props} />
+/**
+ * The type of `props.placeholder` is unfortunately `string | undefined`.
+ */
+export const EmailInput: SFC<Props> = props => <input {...props} />
 
 EmailInput.defaultProps = defaultProps
 
-/**
- * The `placeholder` prop is not required.
- */
 export const example = <EmailInput />

@@ -1,8 +1,11 @@
 import React, { Component } from "react"
 
 export interface Props {
+  /**
+   * Since the `placeholder` prop has a default value,
+   * make it required to avoid unnecessary null checks.
+   */
   placeholder: string
-  title?: string
 }
 
 export class EmailInput extends Component<Props> {
@@ -17,6 +20,7 @@ export class EmailInput extends Component<Props> {
 }
 
 /**
- * Note how the `placeholder` prop is optional, too.
+ * The `placeholder` prop does not need to be specified,
+ * despite it being mandatory as per the `Props`.
  */
 export const example = <EmailInput />
