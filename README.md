@@ -22,7 +22,6 @@
 | Table of Contents                        |
 |:-----------------------------------------|
 | [React](examples/react)                        |
-| [Redux](examples/redux)                        |
 | [StyledComponents](examples/styled-components) |
 
 #
