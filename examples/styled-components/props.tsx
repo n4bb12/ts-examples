@@ -2,7 +2,6 @@ import React from "react"
 import styled, { css } from "styled-components"
 
 export interface Props {
-  htmlFor?: string
   required?: boolean
 }
 
@@ -21,7 +20,7 @@ export const Label = styled.label<Props>`
 `
 
 export const example = (
-  <Label required htmlFor="example">
+  <Label required>
     Example
   </Label>
 )

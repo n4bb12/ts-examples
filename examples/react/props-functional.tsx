@@ -1,12 +1,16 @@
 import React, { SFC } from "react"
 
 export interface Props {
-  htmlFor?: string
-  required?: boolean
+  primary?: boolean
 }
 
+/**
+ * `children` exists implicitly and is of type `ReactNode`.
+ * `...props` is of type `{ primary?: boolean | undefined }`.
+ */
 export const Label: SFC<Props> = ({ children, ...props }) => (
   <label {...props}>{children}</label>
 )
 
-export const example = <Label required htmlFor="example">Example</Label>
+export const primary = <Label primary>Primary</Label>
+export const secondary = <Label>Secondary</Label>

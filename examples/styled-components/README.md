@@ -3,28 +3,28 @@
 ### Props Dom
 
 ```tsx
-import React, { LabelHTMLAttributes } from "react"
-import styled, { css } from "styled-components"
+import React from "react"
+import styled from "styled-components"
 
-export interface Props extends LabelHTMLAttributes<HTMLLabelElement> {
+export interface Props {
   required?: boolean
 }
 
-const requiredStyles = ({ required }: Props) =>
-  css`
-    &::after {
-      content: ${required ? " *:" : ":"};
-    }
-  `
-
 export const Label = styled.label<Props>`
-  color: #444;
+  color: #333;
   font-weight: bold;
-  margin-bottom: 0.5em;
-  ${requiredStyles};
 `
 
-export const example = <Label required htmlFor="example">Example</Label>
+/**
+ * Note how the label also supports the native `htmlFor`
+ * prop, because `styled-components` merges `Props` with
+ * `LabelHTMLAttributes<HTMLLabelElement>`.
+ */
+export const example = (
+  <Label required htmlFor="example">
+    Example
+  </Label>
+)
 ```
 
 ### Props
@@ -34,7 +34,6 @@ import React from "react"
 import styled, { css } from "styled-components"
 
 export interface Props {
-  htmlFor?: string
   required?: boolean
 }
 
@@ -53,7 +52,7 @@ export const Label = styled.label<Props>`
 `
 
 export const example = (
-  <Label required htmlFor="example">
+  <Label required>
     Example
   </Label>
 )

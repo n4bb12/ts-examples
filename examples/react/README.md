@@ -110,21 +110,18 @@ export const example = <EmailInput />
 ### Props Dom
 
 ```tsx
-import React, { Component, LabelHTMLAttributes } from "react"
+import React, { LabelHTMLAttributes, SFC } from "react"
 
-export interface Props extends LabelHTMLAttributes<HTMLLabelElement> {
-  required?: boolean
-}
+/**
+ * LabelHTMLAttributes is declared by @types/react `index.d.ts`.
+ * HTMLLabelElement is declared by @types/react `global.d.ts` (ambient).
+ */
+export type Props = LabelHTMLAttributes<HTMLLabelElement>
 
-export class Label extends Component<Props> {
-  render() {
-    const { children, ...props } = this.props
-    return <label {...props}>{children}</label>
-  }
-}
+export const Label: SFC<Props> = props => <label {...props} />
 
 export const example = (
-  <Label required htmlFor="example">
+  <Label className="primary" htmlFor="example">
     Example
   </Label>
 )
@@ -136,59 +133,63 @@ export const example = (
 import React, { SFC } from "react"
 
 export interface Props {
-  htmlFor?: string
-  required?: boolean
+  primary?: boolean
 }
 
+/**
+ * `children` exists implicitly and is of type `ReactNode`.
+ * `...props` is of type `{ primary?: boolean | undefined }`.
+ */
 export const Label: SFC<Props> = ({ children, ...props }) => (
   <label {...props}>{children}</label>
 )
 
-export const example = <Label required htmlFor="example">Example</Label>
+export const primary = <Label primary>Primary</Label>
+export const secondary = <Label>Secondary</Label>
 ```
 
 ### Props Inline
 
 ```tsx
-import React, { Component } from "react"
+import React, { PureComponent } from "react"
 
-export class Label extends Component<{
-  htmlFor?: string,
-  required?: boolean,
+/**
+ * `children` exists implicitly and is of type `ReactNode`.
+ * `...props` is of type `{ primary?: boolean | undefined }`.
+ */
+export class Label extends PureComponent<{
+  primary?: boolean,
 }> {
   render() {
     const { children, ...props } = this.props
+
     return <label {...props}>{children}</label>
   }
 }
 
-export const example = (
-  <Label required htmlFor="example">
-    Example
-  </Label>
-)
+export const example = <Label primary>Example</Label>
 ```
 
 ### Props
 
 ```tsx
-import React, { Component } from "react"
+import React, { PureComponent } from "react"
 
 export interface Props {
-  htmlFor?: string
-  required?: boolean
+  primary?: boolean
 }
 
-export class Label extends Component<Props> {
+/**
+ * `children` exists implicitly and is of type `ReactNode`.
+ * `...props` is of type `{ primary?: boolean | undefined }`.
+ */
+export class Label extends PureComponent<Props> {
   render() {
     const { children, ...props } = this.props
+
     return <label {...props}>{children}</label>
   }
 }
 
-export const example = (
-  <Label required htmlFor="example">
-    Example
-  </Label>
-)
+export const example = <Label primary>Example</Label>
 ```

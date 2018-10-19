@@ -1,18 +1,15 @@
-import React, { Component, LabelHTMLAttributes } from "react"
+import React, { LabelHTMLAttributes, SFC } from "react"
 
-export interface Props extends LabelHTMLAttributes<HTMLLabelElement> {
-  required?: boolean
-}
+/**
+ * LabelHTMLAttributes is declared by @types/react `index.d.ts`.
+ * HTMLLabelElement is declared by @types/react `global.d.ts` (ambient).
+ */
+export type Props = LabelHTMLAttributes<HTMLLabelElement>
 
-export class Label extends Component<Props> {
-  render() {
-    const { children, ...props } = this.props
-    return <label {...props}>{children}</label>
-  }
-}
+export const Label: SFC<Props> = props => <label {...props} />
 
 export const example = (
-  <Label required htmlFor="example">
+  <Label className="primary" htmlFor="example">
     Example
   </Label>
 )

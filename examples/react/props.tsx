@@ -1,19 +1,19 @@
-import React, { Component } from "react"
+import React, { PureComponent } from "react"
 
 export interface Props {
-  htmlFor?: string
-  required?: boolean
+  primary?: boolean
 }
 
-export class Label extends Component<Props> {
+/**
+ * `children` exists implicitly and is of type `ReactNode`.
+ * `...props` is of type `{ primary?: boolean | undefined }`.
+ */
+export class Label extends PureComponent<Props> {
   render() {
     const { children, ...props } = this.props
+
     return <label {...props}>{children}</label>
   }
 }
 
-export const example = (
-  <Label required htmlFor="example">
-    Example
-  </Label>
-)
+export const example = <Label primary>Example</Label>
