@@ -8,14 +8,14 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.com/n4bb12/examples-react-ts">
-    <img alt="Travis" src="https://flat.badgen.net/travis/n4bb12/examples-react-ts?icon=travis">
-  </a>
   <a href="https://raw.githubusercontent.com/n4bb12/examples-react-ts/master/LICENSE">
     <img alt="License" src="https://flat.badgen.net/github/license/n4bb12/examples-react-ts?icon=github">
   </a>
   <a href="https://github.com/n4bb12/examples-react-ts/issues/new">
     <img alt="Issues" src="https://flat.badgen.net/badge/github/create issue/pink?icon=github">
+  </a>
+  <a href="https://travis-ci.com/n4bb12/examples-react-ts">
+    <img alt="Travis" src="https://flat.badgen.net/travis/n4bb12/examples-react-ts?icon=travis">
   </a>
 </p>
 
