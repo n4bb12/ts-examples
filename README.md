@@ -7,19 +7,16 @@
   All examples run on CI to ensure they compile.
 </p>
 
-| Table of Contents                              |
-| :--------------------------------------------- |
-| [React](examples/react)                        |
-| [StyledComponents](examples/styled-components) |
+| Table of Contents                               |
+| :---------------------------------------------- |
+| [react](examples/react)                         |
+| [styled-components](examples/styled-components) |
 
 #
 
-#### Docs
+#### Further Reading
 
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-- [React->TypeScript](https://reactjs.org/docs/static-type-checking.html#typescript)
-
-#### Related
-
-- [react-typescript-cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+- [Using React With TypeScript](https://reactjs.org/docs/static-type-checking.html#typescript)
+- [Cheatsheets for experienced React developers getting started with TypeScript](https://react-typescript-cheatsheet.netlify.app/)
+- [Node.js with TypeScript](https://nodejs.dev/learn/nodejs-with-typescript)
