@@ -51,9 +51,5 @@ export const Label = styled.label<Props>`
   ${requiredStyles};
 `
 
-export const example = (
-  <Label required>
-    Example
-  </Label>
-)
+export const example = <Label required>Example</Label>
 ```

@@ -13,7 +13,7 @@ export type Props = Partial<typeof defaultProps>
 /**
  * The type of `props.placeholder` is unfortunately `string | undefined`.
  */
-export const EmailInput: SFC<Props> = props => <input {...props} />
+export const EmailInput: SFC<Props> = (props) => <input {...props} />
 
 EmailInput.defaultProps = defaultProps
 

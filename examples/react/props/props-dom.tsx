@@ -6,7 +6,7 @@ import React, { LabelHTMLAttributes, SFC } from "react"
  */
 export type Props = LabelHTMLAttributes<HTMLLabelElement>
 
-export const Label: SFC<Props> = props => <label {...props} />
+export const Label: SFC<Props> = (props) => <label {...props} />
 
 export const example = (
   <Label className="primary" htmlFor="example">

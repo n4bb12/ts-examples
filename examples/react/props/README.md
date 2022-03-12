@@ -11,7 +11,7 @@ import React, { LabelHTMLAttributes, SFC } from "react"
  */
 export type Props = LabelHTMLAttributes<HTMLLabelElement>
 
-export const Label: SFC<Props> = props => <label {...props} />
+export const Label: SFC<Props> = (props) => <label {...props} />
 
 export const example = (
   <Label className="primary" htmlFor="example">
@@ -51,7 +51,7 @@ import React, { PureComponent } from "react"
  * `...props` is of type `{ primary?: boolean | undefined }`.
  */
 export class Label extends PureComponent<{
-  primary?: boolean,
+  primary?: boolean
 }> {
   render() {
     const { children, ...props } = this.props

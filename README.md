@@ -1,5 +1,5 @@
 <h1 align="center">
-  💡 React Typescript Examples
+  💡 Typescript Examples
 </h1>
 
 <p align="center">
@@ -8,29 +8,31 @@
 </p>
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/n4bb12/examples-react-ts/master/LICENSE">
-    <img alt="License" src="https://flat.badgen.net/github/license/n4bb12/examples-react-ts?icon=github">
+  <a href="https://raw.githubusercontent.com/n4bb12/ts-examples/master/LICENSE">
+    <img alt="License" src="https://flat.badgen.net/github/license/n4bb12/ts-examples?icon=github">
   </a>
-  <a href="https://github.com/n4bb12/examples-react-ts/issues/new">
+  <a href="https://github.com/n4bb12/ts-examples/issues/new">
     <img alt="Issues" src="https://flat.badgen.net/badge/github/create issue/pink?icon=github">
   </a>
-  <a href="https://travis-ci.com/n4bb12/examples-react-ts">
-    <img alt="Travis" src="https://flat.badgen.net/travis/n4bb12/examples-react-ts?icon=travis">
+  <a href="https://travis-ci.com/n4bb12/ts-examples">
+    <img alt="Travis" src="https://flat.badgen.net/travis/n4bb12/ts-examples?icon=travis">
   </a>
 </p>
 
-| Table of Contents                        |
-|:-----------------------------------------|
+| Table of Contents                              |
+| :--------------------------------------------- |
 | [React](examples/react)                        |
 | [StyledComponents](examples/styled-components) |
 
 #
 
 #### Docs
+
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - [React->TypeScript](https://reactjs.org/docs/static-type-checking.html#typescript)
 
 #### Related
+
 - [TypeScript-React-Starter](https://github.com/Microsoft/TypeScript-React-Starter)
 - [react-typescript-cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet)

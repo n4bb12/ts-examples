@@ -3,21 +3,14 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "jsx": "preserve",
-    "lib": [
-      "esnext",
-      "dom"
-    ],
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
     "module": "esnext",
-    "pretty": true,
+    "noEmit": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "types": [
-      "react"
-    ]
+    "types": ["node", "react"]
   },
-  "include": [
-    "examples"
-  ]
+  "include": ["examples"]
 }
