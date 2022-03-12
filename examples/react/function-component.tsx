@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React, { FC, ReactElement, VFC } from "react"
 
 export interface LabelProps {
   primary?: boolean

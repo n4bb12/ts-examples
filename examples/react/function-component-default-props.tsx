@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 
-export interface Props {
+export interface EmailInputProps {
   /**
    * Since the `placeholder` prop doesn't have a static
    * default value, it needs to be optional.
@@ -11,7 +11,7 @@ export interface Props {
 /**
  * This changes the type of `placeholder` from `string | undefined` to `string`.
  */
-export const EmailInput: FC<Props> = ({ placeholder = "E-Mail" }) => (
+export const EmailInput: FC<EmailInputProps> = ({ placeholder = "E-Mail" }) => (
   <input type="email" placeholder={placeholder} />
 )
 

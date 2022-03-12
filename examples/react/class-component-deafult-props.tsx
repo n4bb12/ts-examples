@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-export interface Props {
+export interface EmailInputProps {
   /**
    * Since the `placeholder` prop has a default value,
    * make it required to avoid unnecessary null checks.
@@ -8,7 +8,7 @@ export interface Props {
   placeholder: string
 }
 
-export class EmailInput extends Component<Props> {
+export class EmailInput extends Component<EmailInputProps> {
   static defaultProps = {
     placeholder: "E-Mail",
   }
