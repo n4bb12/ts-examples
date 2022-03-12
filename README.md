@@ -7,18 +7,6 @@
   All examples run on CI to ensure they compile.
 </p>
 
-<p align="center">
-  <a href="https://raw.githubusercontent.com/n4bb12/ts-examples/master/LICENSE">
-    <img alt="License" src="https://flat.badgen.net/github/license/n4bb12/ts-examples?icon=github">
-  </a>
-  <a href="https://github.com/n4bb12/ts-examples/issues/new">
-    <img alt="Issues" src="https://flat.badgen.net/badge/github/create issue/pink?icon=github">
-  </a>
-  <a href="https://travis-ci.com/n4bb12/ts-examples">
-    <img alt="Travis" src="https://flat.badgen.net/travis/n4bb12/ts-examples?icon=travis">
-  </a>
-</p>
-
 | Table of Contents                              |
 | :--------------------------------------------- |
 | [React](examples/react)                        |
