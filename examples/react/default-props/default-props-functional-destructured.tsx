@@ -1,4 +1,4 @@
-import React, { SFC } from "react"
+import React, { FC } from "react"
 
 export interface Props {
   /**
@@ -11,7 +11,7 @@ export interface Props {
 /**
  * This changes the type of `placeholder` from `string | undefined` to `string`.
  */
-export const EmailInput: SFC<Props> = ({ placeholder = "E-Mail" }) => (
+export const EmailInput: FC<Props> = ({ placeholder = "E-Mail" }) => (
   <input type="email" placeholder={placeholder} />
 )
 

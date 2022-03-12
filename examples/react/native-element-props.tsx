@@ -1,12 +1,12 @@
-import React, { LabelHTMLAttributes, SFC } from "react"
+import React, { LabelHTMLAttributes, FC } from "react"
 
 /**
  * LabelHTMLAttributes is declared by @types/react `index.d.ts`.
  * HTMLLabelElement is declared by @types/react `global.d.ts` (ambient).
  */
-export type Props = LabelHTMLAttributes<HTMLLabelElement>
+export type LabelProps = LabelHTMLAttributes<HTMLLabelElement>
 
-export const Label: SFC<Props> = (props) => <label {...props} />
+export const Label: FC<LabelProps> = (props) => <label {...props} />
 
 export const example = (
   <Label className="primary" htmlFor="example">

@@ -1,4 +1,4 @@
-import React, { SFC } from "react"
+import React, { FC } from "react"
 
 const defaultProps = {
   placeholder: "E-Mail",
@@ -13,7 +13,7 @@ export type Props = Partial<typeof defaultProps>
 /**
  * The type of `props.placeholder` is unfortunately `string | undefined`.
  */
-export const EmailInput: SFC<Props> = (props) => <input {...props} />
+export const EmailInput: FC<Props> = (props) => <input {...props} />
 
 EmailInput.defaultProps = defaultProps
 
