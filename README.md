@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  A collection of examples using React and popular frameworks from the React ecosystem with TypeScript.<br>
+  A collection of examples using TypeScript with popular frameworks.<br>
   All examples run on CI to ensure they compile.
 </p>
 
@@ -22,5 +22,4 @@
 
 #### Related
 
-- [TypeScript-React-Starter](https://github.com/Microsoft/TypeScript-React-Starter)
 - [react-typescript-cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet)
